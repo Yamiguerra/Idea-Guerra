@@ -27,6 +27,7 @@ a {
 
 
 .nav__lista {
+    
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -40,6 +41,7 @@ a {
 .nav__item {
     margin-right: 16px;
     color: white;
+    list-style: none;
 
 }
 
@@ -196,6 +198,7 @@ div a button:hover{
     text-align: center;
     font-size: 18px;
 }
+
 .cabeza-obras{
     background-image: url(../imagenes/de-la-biblioteca-de-alejandria-a-la-del-congreso-de-washington-las-bibliotecas-mas-sorprendentes-del-mundojpg.webp);
     background-attachment: fixed;

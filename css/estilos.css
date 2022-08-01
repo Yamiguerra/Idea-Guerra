@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
+body{
+    font-family: 'Anek Latin', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Smooch', cursive;
+    font-family: 'Uchen', seri
+}
 a {
     text-decoration: none;
     

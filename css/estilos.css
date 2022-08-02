@@ -5,15 +5,15 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: bold;
 
 }
 a {
     text-decoration: none;
     
 }
- p{
-    color: black;
- }
+
 .header {
     background-color: #6A0649;
     color: #C70039;

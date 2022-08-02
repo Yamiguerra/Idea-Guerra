@@ -133,17 +133,23 @@ a {
     
 }
 
-div a button{
+.button{
+
     margin-top: 20px;
     background-color: black;
-    color: white;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 15px;
     transition: padding 1s;
+    padding: 5px 10px;
+    
+  
 }
 
-div a button:hover{
-    padding: 10px;
+.button:hover{
+    padding: 15px 20px ;
 }
+
+
 .cabeza-profesionales{
     background-image: url(../imagenes/escribiendo.jpg);
     background-attachment: fixed ;

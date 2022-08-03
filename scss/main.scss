@@ -1,4 +1,5 @@
-@import "parciales/_base"; //vinculacion con el archivo parcial//
+@import "parciales/variables"; //siempre al inicio
+@import "parciales/_base"; //vinculacion con el archivo parcial
 @import "parciales/_inicio";
 @import "parciales/_profesionales";
 @import "parciales/_objetivo";

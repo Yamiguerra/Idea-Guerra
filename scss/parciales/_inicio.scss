@@ -4,10 +4,10 @@
     grid-template-rows: 2fr;
     grid-template-areas: inicio presupuesto;
 
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    justify-content: $Centrado;
+    align-content: $Centrado;
+    justify-items: $Centrado;
+    align-items: $Centrado;
     
 }
 

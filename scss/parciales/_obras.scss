@@ -10,13 +10,13 @@
     margin: 20px;
 }
 .obras-portadas{
-    text-align: center;
+    text-align: $Centrado;
     margin: 20px;
 }
 
 .obras-titulos{
     margin: 20px;
-    text-align: center;
+    text-align: $Centrado;
 }
 
 
@@ -26,7 +26,7 @@
 }
 
 .obras-portadas p{
-    text-align: center;
+    text-align: $Centrado;
     padding-left: 40%;
     padding-right: 40%;
 }

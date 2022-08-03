@@ -16,10 +16,10 @@
     grid-template-rows: 2fr;
     grid-template-areas: "text""video1" ;
 
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
+    align-items: $Centrado;
+    justify-items: $Centrado;
+    justify-content: $Centrado;
+    align-content: $Centrado;
   
     
 }
@@ -32,7 +32,7 @@
 .video{
 
    grid-area: "video1";
-   justify-items: center;
+   justify-items: $Centrado;
 
 
 }

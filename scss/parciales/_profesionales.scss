@@ -19,21 +19,21 @@
     "pf1 pf2 pf3"
     ;
 
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    justify-content: $Centrado;
+    align-content: $Centrado;
+    justify-items: $Centrado;
+    align-items: $Centrado;
 }
 
 .grid_profesionales-titulo{
     grid-area: titulo;
     font-size: 25px;
-    text-align: center;
+    text-align: $Centrado;
     height: 1px;
 }
 
 .profesionales-subtitulo{
-    text-align: center;
+    text-align: $Centrado;
     font-size: 20px;
     height: 50px;
 }
@@ -52,6 +52,6 @@
 }
 
 .profesionales-presentacion{
-    text-align: center;
+    text-align: $Centrado;
     font-size: 18px;
 }

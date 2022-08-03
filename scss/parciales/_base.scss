@@ -1,0 +1,89 @@
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: bold;
+
+}
+a {
+    text-decoration: none;
+    
+}
+
+.header {
+    background-color: #6A0649;
+    color: #C70039;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.nav__lista {
+    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-size: 100%;
+  
+    
+}
+
+.nav__item {
+    margin-right: 16px;
+    color: white;
+    list-style: none;
+
+}
+
+.propiedades-titulo {
+        color: black;
+        font-size: 205%;
+        text-align: center;
+        margin: 30px;
+       
+}
+
+.propiedades-texto{
+    color: black;
+    font-size: 100%;
+    font-style: normal;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+.textoPie {
+    text-align:end;
+    color: black;
+}
+
+.whatsapp {
+    
+    color: white;
+    width: 100px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+

@@ -1,0 +1,62 @@
+.grid_inicio{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: inicio presupuesto;
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+.grid_inicio-estilo{
+    border-right: 2px solid grey;
+    
+    position: relative;
+}
+
+.grid_estudio{
+    grid-area: inicio;
+   
+}
+
+.grid_presupuesto{
+    grid-area: presupuesto;
+}
+
+.inicio1{
+    background-image: url(../imagenes/7fbca6d2ca69e4fdb2160b4b4a4e4b5c.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 80vh;
+}
+
+
+.presupuesto{
+    text-align: center ;
+    width: 50%;
+    margin: 100px;
+    font-size: 20px;
+    
+}
+
+.button{
+
+    margin-top: 20px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 15px;
+    transition: padding 1s;
+    padding: 5px 10px;
+    
+  
+}
+
+.button:hover{
+    padding: 15px 20px ;
+}

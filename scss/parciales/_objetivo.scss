@@ -1,0 +1,38 @@
+
+.cabeza-objetivo{
+    background-image: url(../imagenes/b1-2.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+
+.grid_objetivo{
+    padding: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "text""video1" ;
+
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  
+    
+}
+
+.grid_objetivo-texto{
+    grid-area: "text";
+    height: 300px;
+}
+
+.video{
+
+   grid-area: "video1";
+   justify-items: center;
+
+
+}

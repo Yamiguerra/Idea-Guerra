@@ -1,3 +1,9 @@
-.yam{
-    color: black;
-}
+@import "parciales/_base"; //vinculacion con el archivo parcial//
+@import "parciales/_inicio";
+@import "parciales/_profesionales";
+@import "parciales/_objetivo";
+@import "parciales/obras";
+@import "parciales/_contacto";
+@import "./parciales/_media-querys.scss";
+
+

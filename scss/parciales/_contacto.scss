@@ -1,0 +1,39 @@
+.flexbox-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contacto{
+    font-size: 180%;
+    position: relative;
+    color: black;
+    display: block;
+    padding: 0 0 15px 0;
+    margin: 0 0 30px 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.detalle-contacto{
+    margin: 100px;
+    border: 2px solid grey; 
+    padding: 10px;
+}
+
+.detalle-contacto div p{
+    margin: 20px;
+}
+
+.consulta{
+    margin: 100px;
+    border: 2px solid grey; 
+    padding: 10px;
+}
+
+.consulta div{
+    margin: 20px;
+}
+.button-enviar{
+    text-align: right;
+}

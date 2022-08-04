@@ -141,7 +141,8 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   height: 1000px;
-  grid-template-areas: "titulo titulo titulo"  "pf1 pf2 pf3";
+  grid-template-areas: "titulo titulo titulo" 
+ "pf1 pf2 pf3";
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -243,11 +244,6 @@ a {
   padding-right: 40%;
 }
 
-.flexbox-contacto {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
 
 .contacto {
   font-size: 180%;
@@ -294,5 +290,11 @@ a {
   }
   .cabeza-obras {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .mensaje {
+    margin-right: 10px;
   }
 }

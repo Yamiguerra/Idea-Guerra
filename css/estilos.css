@@ -364,6 +364,29 @@ a {
    
   }
   
+  
+.grid_objetivo {
+  padding-top: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "text" "video1";
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid_objetivo-texto {
+  grid-area: "text";
+
+}
+
+.video {
+  grid-area: "video1";
+  justify-items: center;
+}
 
   .mensaje {
     margin-right: 10px;

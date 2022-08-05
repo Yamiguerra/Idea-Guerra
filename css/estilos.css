@@ -203,7 +203,8 @@ a {
 
 .grid_objetivo-texto {
   grid-area: "text";
-  height: 300px;
+  height: 400px;
+  margin: 5px;
 }
 
 .video {
@@ -380,6 +381,7 @@ a {
 
 .grid_objetivo-texto {
   grid-area: "text";
+  margin: 10px;
 
 }
 

@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+head {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: black;
@@ -16,7 +22,6 @@ a {
 
 .header {
   background-color: #6A0649;
-  color: #C70039;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,9 +31,10 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  color: white;
 }
 
-.nav__lista {
+.nav {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -37,10 +43,20 @@ a {
   font-size: 100%;
 }
 
-.nav__item {
+.nav-item {
   margin-right: 16px;
   color: white;
   list-style: none;
+}
+
+.nav-link {
+  color: white;
+}
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
 }
 
 .propiedades-titulo {
@@ -62,7 +78,6 @@ a {
 .textoPie {
   text-align: end;
   color: black;
-  margin-top: 100px;
 }
 
 .whatsapp {
@@ -142,8 +157,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   height: 1000px;
-  grid-template-areas: "titulo titulo titulo" 
- "pf1 pf2 pf3";
+  grid-template-areas: "titulo titulo titulo"  "pf1 pf2 pf3";
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -203,8 +217,7 @@ a {
 
 .grid_objetivo-texto {
   grid-area: "text";
-  height: 400px;
-  margin: 5px;
+  height: 300px;
 }
 
 .video {
@@ -246,11 +259,12 @@ a {
   padding-right: 40%;
 }
 
-.DetalleContainer{
-
-  margin-top: 30px;
-  
+.flexbox-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
 .contacto {
   font-size: 180%;
   position: relative;
@@ -264,7 +278,7 @@ a {
 }
 
 .detalle-contacto {
-  margin: 100px;
+  margin: 80px;
   border: 2px solid grey;
   padding: 10px;
 }
@@ -274,7 +288,7 @@ a {
 }
 
 .consulta {
-  margin: 100px;
+  margin: 80px;
   border: 2px solid grey;
   padding: 10px;
 }
@@ -305,8 +319,7 @@ a {
     border-right: white;
     position: relative;
   }
-
-  .grid_inicio{
+  .grid_inicio {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 2fr 2fr;
@@ -316,14 +329,9 @@ a {
     align-content: center;
     align-items: center;
   }
-
-  
   .grid_estudio {
     grid-area: inicio;
   }
- 
-
-
   .grid_profesionales {
     display: grid;
     grid-template-columns: 1fr;
@@ -335,7 +343,6 @@ a {
     justify-items: center;
     align-items: center;
   }
-  
   .grid_profesionales-titulo {
     grid-area: titulo;
     font-size: 25px;
@@ -343,58 +350,64 @@ a {
     height: 1px;
     margin: 100px;
   }
-  
   .profesionales-subtitulo {
     text-align: center;
     font-size: 20px;
     height: 50px;
   }
-  
   .grid_profesionales-1 {
     grid-area: pf1;
     margin-bottom: 30px;
   }
-  
   .grid_profesionales-2 {
     grid-area: pf2;
     margin-bottom: 30px;
   }
-  
   .grid_profesionales-3 {
     grid-area: pf3;
-   
   }
-  
-  
-.grid_objetivo {
-  padding-top: 20px;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 2fr;
-  grid-template-areas: "text" "video1";
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
-}
-
-.grid_objetivo-texto {
-  grid-area: "text";
-  margin: 10px;
-
-}
-
-.video {
-  grid-area: "video1";
-  justify-items: center;
-}
-
-  .mensaje {
-    margin-right: 10px;
+  .grid_objetivo {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: "text" "video1";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
   }
-
-  .DetalleContainer{
+  .grid_objetivo-texto {
+    grid-area: "text";
+    margin: 10px;
+  }
+  .video {
+    grid-area: "video1";
+    justify-items: center;
+  }
+  .DetalleContainer {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1312px) {
+  .grid_objetivo {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: "text" "video1";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .grid_objetivo-texto {
+    grid-area: "text";
+    margin: 10px;
+  }
+  .video {
+    grid-area: "video1";
+    justify-items: center;
   }
 }

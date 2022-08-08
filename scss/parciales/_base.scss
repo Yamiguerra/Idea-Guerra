@@ -5,6 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+head{
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+
+
+}
 body{
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -18,7 +26,6 @@ a {
 
 .header {
     background-color: #6A0649;
-    color: #C70039;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,10 +35,11 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    color: white;
 }
 
 
-.nav__lista {
+.nav {
     
     list-style: none;
     display: flex;
@@ -39,16 +47,29 @@ a {
     align-items: center;
     color: black;
     font-size: 100%;
-  
-    
-}
 
-.nav__item {
+  &-item {
     margin-right: 16px;
     color: white;
     list-style: none;
 
 }
+
+&-link{
+    color: white;
+}
+    
+}
+
+header{
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+
+
+}
+
 
 .propiedades-titulo {
         color: black;

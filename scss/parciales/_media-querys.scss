@@ -1,12 +1,136 @@
-@media screen and (max-width:600px) {
-    .flexbox-contacto{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        text-align: $Centrado;
+
+@media screen and (max-width: 600px) {
+    .flexbox-contacto {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      text-align: center;
     }
-    .cabeza-obras{
-        text-align: $Centrado;
+    .cabeza-obras {
+      text-align: center;
     }
- 
-}
+  }
+  
+  @media screen and (max-width: 780px) {
+    .grid_inicio-estilo {
+      border-bottom: 2px solid grey;
+      border-right: white;
+      position: relative;
+    }
+  
+    .grid_inicio{
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: 2fr 2fr;
+      grid-template-areas: inicio presupuesto;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      align-items: center;
+    }
+  
+    
+    .grid_estudio {
+      grid-area: inicio;
+    }
+   
+  
+  
+    .grid_profesionales {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      height: 1000px;
+      grid-template-areas: "titulo" "pf1" "pf2" "pf3";
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+    
+    .grid_profesionales-titulo {
+      grid-area: titulo;
+      font-size: 25px;
+      text-align: center;
+      height: 1px;
+      margin: 100px;
+    }
+    
+    .profesionales-subtitulo {
+      text-align: center;
+      font-size: 20px;
+      height: 50px;
+    }
+    
+    .grid_profesionales-1 {
+      grid-area: pf1;
+      margin-bottom: 30px;
+    }
+    
+    .grid_profesionales-2 {
+      grid-area: pf2;
+      margin-bottom: 30px;
+    }
+    
+    .grid_profesionales-3 {
+      grid-area: pf3;
+     
+    }
+    
+    
+  .grid_objetivo {
+    padding-top: 20px;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: "text" "video1";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .grid_objetivo-texto {
+    grid-area: "text";
+    margin: 10px;
+  
+  }
+  
+  .video {
+    grid-area: "video1";
+    justify-items: center;
+  }
+  
+    .DetalleContainer{
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1312px) {
+       
+  .grid_objetivo {
+    padding-top: 20px;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: "text" "video1";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .grid_objetivo-texto {
+    grid-area: "text";
+    margin: 10px;
+  
+  }
+  
+  .video {
+    grid-area: "video1";
+    justify-items: center;
+  }
+   
+  }

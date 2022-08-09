@@ -1,5 +1,8 @@
 
 @media screen and (max-width: 600px) {
+    .nav{
+      width: 100%;
+    }
     .flexbox-contacto {
       display: grid;
       grid-template-columns: 1fr;
@@ -12,6 +15,10 @@
   }
   
   @media screen and (max-width: 780px) {
+    .nav{
+      width: 100%;
+    }
+    
     .grid_inicio-estilo {
       border-bottom: 2px solid grey;
       border-right: white;

@@ -27,6 +27,9 @@
     grid-area: presupuesto;
 }
 
+.presupuesto-titulo{
+    font-weight: bold
+}
 .inicio1{
     background-image: url(../imagenes/7fbca6d2ca69e4fdb2160b4b4a4e4b5c.jpg);
     background-position: right center;
@@ -49,7 +52,7 @@
 
     margin-top: 20px;
     background-color: black;
-    color: #ffffff;
+    color: $Color;
     font-size: 15px;
     transition: padding 1s;
     padding: 5px 10px;

@@ -8,7 +8,7 @@
 head{
 
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: $Color;
     font-weight: bold;
 
 
@@ -24,8 +24,10 @@ a {
     
 }
 
+
 .header {
     background-color: #6A0649;
+    color: bisque;
     top: 0;
     left: 0;
     width: 100%;
@@ -38,44 +40,55 @@ a {
     color: white;
 }
 
+$navegador: (
+    estilo: none,
+    vinculacion: flex,
+    direccion: row,
+    alineacion: center,
+    color: black,
+
+);
 
 .nav {
-    
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: black;
+    list-style: map-get($navegador, estilo );
+    display: map-get( $navegador , vinculacion );
+    flex-direction: map-get($navegador , direccion );
+    align-items: map-get($map: $navegador, $key: alineacion );
+    color: map-get($map: $navegador, $key:color );
     font-size: 100%;
-
-  &-item {
+    &-item {
     margin-right: 16px;
-    color: white;
+    color: $Color;
     list-style: none;
+    }
 
-}
+          
+    &-link{
 
-&-link{
-    color: white;
-}
-    
+        color: $Color;
+    }
+
+    &-link:hover{
+            color: plum;
+            cursor: pointer;
+    }
 }
 
 header{
 
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: $Color;
     font-weight: bold;
 
 
 }
 
-
 .propiedades-titulo {
-        color: black;
-        font-size: 205%;
-        text-align: center;
-        margin: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 205%;
+    text-align: center;
+    margin: 30px;
        
 }
 
@@ -89,19 +102,24 @@ header{
 
 }
 
+.propiedades-bajo{
+    float: left;
+   
+}
 
 .textoPie {
     text-align:end;
     color: black;
+    float: left;
+    margin-top: 20px;
 }
 
 .whatsapp {
     
-    color: white;
+    color: $Color;
     width: 100px;
     padding: 0.5rem 1rem;
     text-align: center;
-
     position: fixed;
     right: 1rem;
     bottom: 1rem;

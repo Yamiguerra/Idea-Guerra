@@ -22,6 +22,7 @@ a {
 
 .header {
   background-color: #6A0649;
+  color: bisque;
   top: 0;
   left: 0;
   width: 100%;
@@ -53,6 +54,11 @@ a {
   color: white;
 }
 
+.nav-link:hover {
+  color: plum;
+  cursor: pointer;
+}
+
 header {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -61,6 +67,7 @@ header {
 
 .propiedades-titulo {
   color: black;
+  font-weight: bold;
   font-size: 205%;
   text-align: center;
   margin: 30px;
@@ -75,9 +82,15 @@ header {
   margin: 10px;
 }
 
+.propiedades-bajo {
+  float: left;
+}
+
 .textoPie {
   text-align: end;
   color: black;
+  float: left;
+  margin-top: 20px;
 }
 
 .whatsapp {
@@ -114,6 +127,10 @@ header {
   grid-area: presupuesto;
 }
 
+.presupuesto-titulo {
+  font-weight: bold;
+}
+
 .inicio1 {
   background-image: url(../imagenes/7fbca6d2ca69e4fdb2160b4b4a4e4b5c.jpg);
   background-position: right center;
@@ -133,7 +150,7 @@ header {
 .button {
   margin-top: 20px;
   background-color: black;
-  color: #ffffff;
+  color: white;
   font-size: 15px;
   transition: padding 1s;
   padding: 5px 10px;
@@ -169,12 +186,14 @@ header {
   font-size: 25px;
   text-align: center;
   height: 1px;
+  font-weight: lighter;
 }
 
 .profesionales-subtitulo {
   text-align: center;
   font-size: 20px;
   height: 50px;
+  font-weight: bold;
 }
 
 .grid_profesionales-1 {
@@ -248,15 +267,14 @@ header {
   text-align: center;
 }
 
-.sinopsis {
-  font-size: 20px;
-  margin: 10px;
-}
-
 .obras-portadas p {
   text-align: center;
   padding-left: 40%;
   padding-right: 40%;
+}
+
+.mapa {
+  width: 100%;
 }
 
 .flexbox-contacto {
@@ -267,9 +285,10 @@ header {
 
 .contacto {
   font-size: 180%;
+  flex-direction: row;
   position: relative;
   color: black;
-  display: block;
+  display: flex;
   padding: 0 0 15px 0;
   margin: 0 0 30px 0;
   margin-top: 30px;
@@ -278,9 +297,9 @@ header {
 }
 
 .detalle-contacto {
-  margin: 80px;
-  border: 2px solid grey;
-  padding: 10px;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
 }
 
 .detalle-contacto div p {
@@ -288,9 +307,9 @@ header {
 }
 
 .consulta {
-  margin: 80px;
-  border: 2px solid grey;
-  padding: 10px;
+  margin-top: 9px;
+  display: flex;
+  flex-direction: row;
 }
 
 .consulta div {
@@ -301,7 +320,15 @@ header {
   text-align: right;
 }
 
+.btn {
+  background-color: blue;
+  align-items: right;
+}
+
 @media screen and (max-width: 600px) {
+  .nav {
+    width: 100%;
+  }
   .flexbox-contacto {
     display: grid;
     grid-template-columns: 1fr;
@@ -314,6 +341,9 @@ header {
 }
 
 @media screen and (max-width: 780px) {
+  .nav {
+    width: 100%;
+  }
   .grid_inicio-estilo {
     border-bottom: 2px solid grey;
     border-right: white;

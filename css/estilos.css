@@ -82,8 +82,8 @@ header {
   margin: 10px;
 }
 
-.propiedades-bajo {
-  float: left;
+footer {
+  position: relative;
 }
 
 .textoPie {
@@ -91,6 +91,7 @@ header {
   color: black;
   float: left;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .whatsapp {
@@ -145,14 +146,6 @@ header {
   width: 50%;
   margin: 100px;
   font-size: 20px;
-}
-
-.inicio {
-  position: relative;
-}
-
-.inicio p {
-  float: right;
 }
 
 .button {
@@ -410,6 +403,9 @@ button {
   }
   .grid_profesionales-3 {
     grid-area: pf3;
+  }
+  .containerO {
+    margin-top: 20px;
   }
   .DetalleContainer {
     text-align: center;

@@ -53,6 +53,7 @@
       align-content: center;
       justify-items: center;
       align-items: center;
+      margin-top: 200px;
     }
     
     .grid_profesionales-titulo {
@@ -60,7 +61,7 @@
       font-size: 25px;
       text-align: center;
       height: 1px;
-      margin: 100px;
+      font-weight: bold;
     }
     
     .profesionales-subtitulo {
@@ -86,7 +87,6 @@
     
     
   .grid_objetivo {
-    padding-top: 20px;
   
     display: grid;
     grid-template-columns: 1fr;
@@ -100,11 +100,11 @@
   
   .grid_objetivo-texto {
     grid-area: "text";
-    margin: 10px;
+ 
   
   }
   
-  .video {
+  .grid_objetivo-video {
     grid-area: "video1";
     justify-items: center;
   }
@@ -116,12 +116,12 @@
   .mapa{
     width: 100%;
   }
-  }
+}
 
   @media screen and (max-width: 1312px) {
        
   .grid_objetivo {
-    padding-top: 20px;
+
   
     display: grid;
     grid-template-columns: 1fr;
@@ -135,19 +135,12 @@
   
   .grid_objetivo-texto {
     grid-area: "text";
-    margin: 10px;
   
   }
   
-  .video {
+  .grid_objetivo-video {
     grid-area: "video1";
     justify-items: center;
   }
    
-  }
-
-  
-
-
-
-  
+}

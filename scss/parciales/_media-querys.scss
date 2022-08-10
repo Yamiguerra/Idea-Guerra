@@ -53,15 +53,20 @@
       align-content: center;
       justify-items: center;
       align-items: center;
-      margin-top: 200px;
+      margin-top: 100px;
     }
     
     .grid_profesionales-titulo {
       grid-area: titulo;
-      font-size: 25px;
+     
+    }
+
+    .titulo{
+
+      font-size: 50px;
       text-align: center;
-      height: 1px;
       font-weight: bold;
+
     }
     
     .profesionales-subtitulo {
@@ -72,12 +77,10 @@
     
     .grid_profesionales-1 {
       grid-area: pf1;
-      margin-bottom: 30px;
     }
     
     .grid_profesionales-2 {
       grid-area: pf2;
-      margin-bottom: 30px;
     }
     
     .grid_profesionales-3 {
@@ -86,29 +89,6 @@
     }
     
     
-  .grid_objetivo {
-  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr;
-    grid-template-areas: "text" "video1";
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  
-  .grid_objetivo-texto {
-    grid-area: "text";
- 
-  
-  }
-  
-  .grid_objetivo-video {
-    grid-area: "video1";
-    justify-items: center;
-  }
-  
   .DetalleContainer{
     text-align: center;
   }
@@ -118,29 +98,3 @@
   }
 }
 
-  @media screen and (max-width: 1312px) {
-       
-  .grid_objetivo {
-
-  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr;
-    grid-template-areas: "text" "video1";
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  
-  .grid_objetivo-texto {
-    grid-area: "text";
-  
-  }
-  
-  .grid_objetivo-video {
-    grid-area: "video1";
-    justify-items: center;
-  }
-   
-}

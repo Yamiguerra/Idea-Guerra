@@ -8,31 +8,23 @@
     min-height: 50vh;
 }
 
-
-.grid_objetivo{
-    padding: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: "text""video1" ;
-
-    align-items: $Centrado;
-    justify-items: $Centrado;
-    justify-content: $Centrado;
-    align-content: $Centrado;
-  
+.containerO{
+    margin-top: 200px;
     
 }
 
-.grid_objetivo-texto{
-    grid-area: "text";
-    height: 300px;
+.row{
+    --bs-gutter-x: 0;
+}
+.objetivos div {
+    display:flex;
+    flex-direction:row;
+    padding: 0%;
 }
 
 .video{
-
-   grid-area: "video1";
-   justify-items: $Centrado;
-
-
+    display:flex;
+    flex-direction:row;
+    margin-left: 0;
+    padding: 0%;
 }

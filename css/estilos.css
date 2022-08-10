@@ -147,6 +147,14 @@ header {
   font-size: 20px;
 }
 
+.inicio {
+  position: relative;
+}
+
+.inicio p {
+  float: right;
+}
+
 .button {
   margin-top: 20px;
   background-color: black;
@@ -167,13 +175,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
+  margin-bottom: 25px;
 }
 
 .grid_profesionales {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  height: 1000px;
   grid-template-areas: "titulo titulo titulo"  "pf1 pf2 pf3";
   justify-content: center;
   align-content: center;
@@ -183,9 +191,11 @@ header {
 
 .grid_profesionales-titulo {
   grid-area: titulo;
-  font-size: 25px;
+}
+
+.titulo {
+  font-size: 50px;
   text-align: center;
-  height: 1px;
   font-weight: bold;
 }
 
@@ -222,26 +232,25 @@ header {
   min-height: 50vh;
 }
 
-.grid_objetivo {
-  padding: 200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr;
-  grid-template-areas: "text" "video1";
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
+.containerO {
+  margin-top: 200px;
 }
 
-.grid_objetivo-texto {
-  grid-area: "text";
-  height: 300px;
+.row {
+  --bs-gutter-x: 0;
+}
+
+.objetivos div {
+  display: flex;
+  flex-direction: row;
+  padding: 0%;
 }
 
 .video {
-  grid-area: "video1";
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  padding: 0%;
 }
 
 .cabeza-obras {
@@ -292,7 +301,7 @@ button {
   flex-direction: row;
   position: relative;
   color: black;
-  padding: 0 0 15px 0;
+  padding: 0 0 10px 0;
   margin-top: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -305,6 +314,7 @@ button {
 .detalle-contacto {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .detalle-contacto div {
@@ -318,15 +328,16 @@ button {
 
 .consulta div {
   margin: 20px;
+  padding: 0px;
 }
 
-.button-enviar {
-  text-align: right;
+button {
+  position: relative;
 }
 
 .btn {
   background-color: blue;
-  align-items: right;
+  float: right;
 }
 
 @media screen and (max-width: 600px) {
@@ -376,13 +387,14 @@ button {
     align-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .grid_profesionales-titulo {
     grid-area: titulo;
-    font-size: 25px;
+  }
+  .titulo {
+    font-size: 50px;
     text-align: center;
-    height: 1px;
     font-weight: bold;
   }
   .profesionales-subtitulo {
@@ -392,56 +404,17 @@ button {
   }
   .grid_profesionales-1 {
     grid-area: pf1;
-    margin-bottom: 30px;
   }
   .grid_profesionales-2 {
     grid-area: pf2;
-    margin-bottom: 30px;
   }
   .grid_profesionales-3 {
     grid-area: pf3;
-  }
-  .grid_objetivo {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr;
-    grid-template-areas: "text" "video1";
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  .grid_objetivo-texto {
-    grid-area: "text";
-  }
-  .grid_objetivo-video {
-    grid-area: "video1";
-    justify-items: center;
   }
   .DetalleContainer {
     text-align: center;
   }
   .mapa {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 1312px) {
-  .grid_objetivo {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr;
-    grid-template-areas: "text" "video1";
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  .grid_objetivo-texto {
-    grid-area: "text";
-  }
-  .grid_objetivo-video {
-    grid-area: "video1";
-    justify-items: center;
   }
 }

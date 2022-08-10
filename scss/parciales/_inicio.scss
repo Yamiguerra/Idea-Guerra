@@ -30,6 +30,7 @@
 .presupuesto-titulo{
     font-weight: bold
 }
+
 .inicio1{
     background-image: url(../imagenes/7fbca6d2ca69e4fdb2160b4b4a4e4b5c.jpg);
     background-position: right center;
@@ -47,6 +48,15 @@
     font-size: 20px;
     
 }
+
+.inicio{
+    position: relative;
+
+    & p{
+        float: right;
+    }
+}
+
 
 .button{
 

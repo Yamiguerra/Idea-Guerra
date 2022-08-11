@@ -35,6 +35,14 @@ a {
   color: white;
 }
 
+.navbar-toggler {
+  background-color: #6A0649;
+}
+
+.btn {
+  color: white;
+}
+
 .nav {
   list-style: none;
   display: flex;
@@ -51,7 +59,7 @@ a {
 }
 
 .nav-link {
-  color: white;
+  color: black;
 }
 
 .nav-link:hover {
@@ -390,7 +398,8 @@ button {
     font-size: 50px;
     text-align: center;
     font-weight: bold;
-    padding: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
   .profesionales-subtitulo {
     text-align: center;

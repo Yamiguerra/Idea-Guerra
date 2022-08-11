@@ -37,8 +37,16 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    color: white;
+    color: $Color;
 }
+.navbar-toggler{
+    background-color: #6A0649;
+}
+
+.btn{
+    color: $Color;
+}
+
 
 $navegador: (
     estilo: none,
@@ -65,7 +73,7 @@ $navegador: (
           
     &-link{
 
-        color: $Color;
+        color: black;
     }
 
     &-link:hover{

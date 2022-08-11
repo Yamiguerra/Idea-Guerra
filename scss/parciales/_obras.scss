@@ -7,23 +7,20 @@
     min-height: 50vh;
 }
 
+@mixin estilo ($margen, $alineado) {
 
-.obras div{
-    margin: 20px;
+    margin: $margen;
+    text-align: $alineado;
+
 }
-
 
 .obras-portadas{
-    text-align: $Centrado;
-    margin: 20px;
+    @include estilo (20px, center)
 }
-
 
 .obras-titulos{
-    margin: 20px;
-    text-align: $Centrado;
+    @include estilo(20px, center)
 }
-
 
 .obras-portadas p{
     text-align: $Centrado;
@@ -32,7 +29,7 @@
 }
 
 .carousel-item{
-    text-align: center;
+    text-align: $Centrado;
 }
 
 button{

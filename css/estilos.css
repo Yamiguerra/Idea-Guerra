@@ -261,13 +261,9 @@ footer {
   min-height: 50vh;
 }
 
-.obras div {
-  margin: 20px;
-}
-
 .obras-portadas {
-  text-align: center;
   margin: 20px;
+  text-align: center;
 }
 
 .obras-titulos {

@@ -83,24 +83,39 @@ header{
 
 }
 
+$alineacion:(
+    titulo:center,
+    texto:justify
+);
+
+
+@each $clave, $valor in $alineacion {
+
+    //clave-> titulo, valor->center
+
+    .propiedades-#{$clave}{
+        text-align: $valor;
+        color: black;
+    }
+    
+}
+
 .propiedades-titulo {
-    color: black;
+   
     font-weight: bold;
     font-size: 205%;
-    text-align: center;
     margin: 30px;
        
 }
 
 .propiedades-texto{
-    color: black;
     font-size: 100%;
     font-style: normal;
-    text-align: justify;
     padding: 10px;
     margin: 10px;
 
 }
+
 footer{
     position: relative;
 

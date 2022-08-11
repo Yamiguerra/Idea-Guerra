@@ -376,7 +376,6 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    height: 1000px;
     grid-template-areas: "titulo" "pf1" "pf2" "pf3";
     justify-content: center;
     align-content: center;

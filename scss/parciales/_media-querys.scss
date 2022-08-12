@@ -1,8 +1,6 @@
 
 @media screen and (max-width: 600px) {
-    .nav{
-      width: 100%;
-    }
+
     .flexbox-contacto {
       display: grid;
       grid-template-columns: 1fr;
@@ -21,9 +19,6 @@
       position: fixed;
       margin-top: 20px;    margin-left: 20px;
   }
-    .nav{
-      width: 100%;
-    }
     
     .grid_inicio-estilo {
       border-bottom: 2px solid grey;
@@ -106,5 +101,7 @@
   .mapa{
     width: 100%;
   }
+
+  
 }
 

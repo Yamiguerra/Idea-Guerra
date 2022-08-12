@@ -39,6 +39,10 @@ a {
     padding: 1rem;
     color: $Color;
 }
+
+.navbar-dark{
+    color: white;
+}
 .navbar-toggler{
     background-color: #6A0649;
 }
@@ -56,7 +60,9 @@ $navegador: (
     color: black,
 
 );
-
+.navbar-brand{
+    color: white;
+}
 .nav {
     list-style: map-get($navegador, estilo );
     display: map-get( $navegador , vinculacion );
@@ -72,8 +78,9 @@ $navegador: (
 
           
     &-link{
-
+        background-color: white;
         color: black;
+        font-size: 20px;
     }
 
     &-link:hover{
@@ -119,6 +126,7 @@ $alineacion:(
 .propiedades-texto{
     font-size: 100%;
     font-style: normal;
+    font-weight: 1000;
     padding: 10px;
     margin: 10px;
 

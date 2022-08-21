@@ -269,25 +269,18 @@ footer {
   min-height: 50vh;
 }
 
-.containerO {
-  margin-top: 200px;
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 900px;
 }
 
-.row {
+.fila {
   --bs-gutter-x: 0;
-}
-
-.objetivos div {
-  display: flex;
-  flex-direction: row;
-  padding: 0%;
-}
-
-.video {
-  display: flex;
-  flex-direction: row;
-  margin-left: 0;
-  padding: 0%;
+  margin-top: 200px;
+  padding: auto;
 }
 
 .cabeza-obras {
@@ -313,6 +306,10 @@ footer {
   text-align: center;
   padding-left: 40%;
   padding-right: 40%;
+}
+
+.carousel {
+  height: 500px;
 }
 
 .carousel-item {
@@ -341,11 +338,11 @@ button {
 }
 
 .card {
-  margin: 20px;
+  width: 500px;
 }
 
 .detalle-contacto {
-  margin: auto;
+  margin: 100px;
 }
 
 .detalle-contacto div {
@@ -355,6 +352,7 @@ button {
 .consulta {
   display: flex;
   flex-direction: row;
+  width: 500px;
 }
 
 .consulta div {

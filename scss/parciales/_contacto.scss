@@ -17,12 +17,13 @@
 }
 
 .card{
-    margin: 20px;
 
+    width: 500px;
 }
 
 .detalle-contacto{
-    margin: auto;
+    margin: 100px;
+
     & div{
         margin: 20px;
     }
@@ -33,12 +34,14 @@
 .consulta{
     display:flex;
     flex-direction:row;
+    width: 500px;
 
 }
 
 .consulta div{
     margin: 20px;
     padding: 0px;
+    
 }
 button{
     position: relative;

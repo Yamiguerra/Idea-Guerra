@@ -449,8 +449,16 @@ button {
   .grid_profesionales-3 {
     grid-area: pf3;
   }
-  .containerO {
-    margin-top: 20px;
+  .flex {
+    height: 600px;
+  }
+  .fila {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .video {
+    width: 300px;
+    height: 200px;
   }
   .DetalleContainer {
     text-align: center;
